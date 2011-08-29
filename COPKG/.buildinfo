@@ -1,0 +1,20 @@
+#product-info
+{
+	product-name: "win-iconv";
+	version: "0.0.3";
+	original-source-location: "http://code.google.com/p/win-iconv";
+	license: "BSD 2-Clause";
+}
+
+x86 {
+
+targets: {
+	"iconv.dll"
+};
+
+build-command:@"
+msbuild win_iconv.vcxproj /p:Configuration=Release
+";
+
+};
+
